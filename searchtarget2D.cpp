@@ -24,9 +24,9 @@ int arr[3][3] = {
     {9, 8, 2}
 };
 
-int target =7;
+int target =9;
 pair<int,int> result = searchtarget(arr,target);
-cout<<"Target Found or Not :"<<result.first<<" "<<result.second;
+cout<<endl<<result.first<<" "<<result.second;
 
    return 0;
 }

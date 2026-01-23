@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-int searchtarget(int arr[][3],  int target){
+    pair<int,int> searchtarget(int arr[][3],  int target){
         for(int i = 0 ; i < 3 ; i++){
             for(int j = 0 ; j < 3 ; j++){
                 if(target==arr[i][j]){
@@ -11,7 +11,9 @@ int searchtarget(int arr[][3],  int target){
                     return temp;
                 }
             }
-}
+            
+    }
+    return {-1,-1};
 }
 
 int main(){
@@ -103,6 +105,9 @@ int arr[3][3] = {
     {5, 6, 7},
     {9, 8, 2}
 };
+
+pair<int,int> result = searchtarget(arr,7);
+cout<<result.first<<","<<result.second<<endl;
 
     return 0;
 }
